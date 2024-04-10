@@ -4,12 +4,6 @@ import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-
         <button
         onClick$={async () => {
           await fetchPost();
@@ -17,7 +11,6 @@ export default component$(() => {
         
         >post to posty</button>
         <a href="/posty">nevigate to posty</a>
-      </p>
     </>
   );
 });
